@@ -17,7 +17,7 @@ class BookCategoryFactory extends Factory
         $bookId = DB::table('books')->pluck('id');
         $categoryId = DB::table('categories')->pluck('id');
         return [
-            'book_id' => $this->faker->randomElement($bookId),
+            'book_id' => $this->faker->unique()->randomElement($bookId),
             'category_id' => $this->faker->randomElement($categoryId)
         ];
     }

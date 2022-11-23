@@ -3,7 +3,7 @@
 @section('title', 'BookDetail')
 @section('container')
 
-<div class="d-flex justify-content-center align-items-center" style="height: 100vh">
+<div class="d-flex justify-content-center align-items-center p-5 m-5">
     <div class="card" style="width: 18rem;">
         <img src=" {{$book->image}} " class="card-img-top" alt="...">
         <div class="card-body">
